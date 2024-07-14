@@ -1,18 +1,20 @@
-import { cyan, deepOrange, orange, teal } from "@mui/material/colors";
+import { cyan } from "@mui/material/colors";
 import { experimental_extendTheme as extendTheme } from "@mui/material/styles";
 
 const theme = extendTheme({
+  trello: {
+    appBarHeight: "48px",
+    boardBarHeight: "58px",
+  },
   colorSchemes: {
     light: {
       palette: {
-        primary: teal,
-        secondary: deepOrange,
+        primary: { main: cyan[500] },
       },
     },
     dark: {
       palette: {
-        primary: cyan,
-        secondary: orange,
+        primary: { main: cyan[900] },
       },
     },
   },
