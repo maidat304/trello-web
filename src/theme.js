@@ -1,4 +1,4 @@
-import { cyan } from "@mui/material/colors";
+import { cyan, teal } from "@mui/material/colors";
 import { experimental_extendTheme as extendTheme } from "@mui/material/styles";
 
 const theme = extendTheme({
@@ -9,7 +9,7 @@ const theme = extendTheme({
   colorSchemes: {
     light: {
       palette: {
-        primary: { main: cyan[500] },
+        primary: { main: teal[400] },
       },
     },
     dark: {
