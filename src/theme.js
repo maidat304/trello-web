@@ -1,4 +1,4 @@
-import { cyan, red, teal } from "@mui/material/colors";
+import { red, teal } from "@mui/material/colors";
 import { experimental_extendTheme as extendTheme } from "@mui/material/styles";
 
 const theme = extendTheme({
@@ -7,15 +7,15 @@ const theme = extendTheme({
     boardBarHeight: "56px",
   },
   colorSchemes: {
-    light: {
-      palette: {
-        primary: { main: teal[400] },
-        secondary: red,
-      },
-    },
+    // light: {
+    //   palette: {
+    //     primary: cyan,
+    //     secondary: red,
+    //   },
+    // },
     dark: {
       palette: {
-        primary: { main: cyan[900] },
+        primary: teal,
         secondary: red,
       },
     },
@@ -36,7 +36,7 @@ const theme = extendTheme({
           },
 
           "*::-webkit-scrollbar-thumb:hover": {
-            background: "#00b894",
+            background: "#95a5a6",
           },
         },
       },

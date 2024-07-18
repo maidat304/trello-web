@@ -17,6 +17,7 @@ import Templates from "./Menus/Templates";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import Profiles from "./Menus/Profiles";
+import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
 
 function AppBar() {
   return (
@@ -29,7 +30,7 @@ function AppBar() {
         alignItems: "center",
         justifyContent: "space-between",
         gap: 2,
-        overflowX: "auto"
+        overflowX: "auto",
       }}
     >
       <Box
@@ -59,7 +60,9 @@ function AppBar() {
           <Recent />
           <Starred />
           <Templates />
-          <Button variant="contained">Create</Button>
+          <Button variant="outlined" startIcon={<LibraryAddIcon />}>
+            Create
+          </Button>
         </Box>
       </Box>
 
@@ -76,7 +79,7 @@ function AppBar() {
           label="Search..."
           type="search"
           size="small"
-          sx={{minWidth: 100}}
+          sx={{ minWidth: 120 }}
         />
         <ModeSelect />
         <Tooltip title="Notification">
